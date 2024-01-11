@@ -21,4 +21,4 @@ usersRoutes.patch(
   userAvatarController.update
 );
 
-module.exports = usersRoutes; //exportando!!!!
+module.exports = usersRoutes;
