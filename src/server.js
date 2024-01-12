@@ -1,8 +1,10 @@
-require('dotenv/config');
+require('dotenv').config();
 require('express-async-errors');
 const migrationsRun = require('./database/sqlite/migrations');
 const AppError = require('./utils/AppError');
 const uploadConfig = require('./configs/upload');
+
+import { connection as knexdb } from './database/knex/index';
 
 const cors = require('cors');
 const express = require('express');
